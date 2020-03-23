@@ -1,0 +1,26 @@
+{
+  "name": "ymusleh/newrelic-incidents-msteams",
+  "version": "0.0.0",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/newrelic/incident/opened.js": {
+      "name": "newrelic.incident.opened",
+      "subtype": {
+        "policy_id": 672425
+      }
+    },
+    "functions/events/newrelic/incident/closed.js": {
+      "name": "newrelic.incident.closed",
+      "subtype": {
+        "policy_id": 672425
+      }
+    },
+    "functions/events/newrelic/incident/acknowledged.js": {
+      "name": "newrelic.incident.acknowledged",
+      "subtype": {
+        "policy_id": 672425
+      }
+    }
+  }
+}
